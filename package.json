@@ -1,0 +1,32 @@
+{
+  "name": "rules-engine",
+  "version": "1.0.0",
+  "description": "running server for json-rules-engine",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js",
+    "lint": "eslint 'src/**/*.js' -f table --max-warnings 0"
+  },
+  "author": "thernandez",
+  "license": "ISC",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tony-hernandez/json-rules-service.git"
+  },
+  "engines": {
+    "node": ">=10.15.3",
+    "npm": ">=6.4.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "json-rules-engine": "^6.1.2"
+  }
+}

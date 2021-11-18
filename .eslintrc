@@ -1,0 +1,28 @@
+{
+  "plugins": [],
+  "extends": [
+    "eslint:recommended"
+  ],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true
+  },
+  "globals": {
+    "process": true,
+    "webpack": true,
+    "module": true,
+    "__dirname": true
+  },
+  "parser": "babel-eslint",
+  "settings": {
+    "propWrapperFunctions": [
+      "forbidExtraProps",
+      {"property": "freeze", "object": "Object"},
+      {"property": "myFavoriteWrapper"}
+    ]
+  },
+  "rules": {
+    "no-console": ["error", { "allow": ["warn", "error"] }]
+  }
+}

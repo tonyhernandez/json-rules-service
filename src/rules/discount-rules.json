@@ -1,0 +1,43 @@
+{
+	"name": "myfirstrules",
+	"attributes": [
+		{
+			"name": "item",
+			"type": "string"
+		}
+	],
+	"decisions": [
+		{
+			"conditions": {
+				"all": [
+					{
+						"fact": "item",
+						"operator": "equal",
+						"value": "bone",
+						"path": "$.item"
+					}
+				]
+			},
+			"event": {
+				"type": "discount-applied",
+				"params": {"discount": 20.0}
+			}
+		},
+		{
+			"conditions": {
+				"all": [
+					{
+						"fact": "item",
+						"operator": "notEqual",
+						"value": "bone",
+						"path": "$.item"
+					}
+				]
+			},
+			"event": {
+				"type": "no-discount",
+				"params": {"discount": 0.0}
+			}
+		}
+	]
+}
