@@ -2,7 +2,7 @@
 
 ### Getting Started
 
-Json rules service wraps the json-rules-engine in an API that allows you to run your business rules and decision outcomes via an external service. A simple POST API to effortlesly run business rules via json files created using json-rule-editor.
+Json rules service wraps the [json-rules-engine](https://github.com/CacheControl/json-rules-engine) in an API that allows you to run your business rules and decision outcomes via an external service. A simple POST API to effortlesly run business rules defined in json files created using [json-rule-editor](https://github.com/vinzdeveloper/json-rule-editor).
 
 Process to implement json rule file in the service is as follows
 
@@ -32,3 +32,5 @@ To launch the json rule editor tool, you can do either of the below
           }'
 
 ```
+
+<img width="1680" alt="rule execution" src="docs/images/json-rules.png">
