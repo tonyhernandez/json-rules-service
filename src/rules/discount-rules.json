@@ -13,7 +13,7 @@
 					{
 						"fact": "item",
 						"operator": "equal",
-						"value": "bone",
+						"value": "shoe",
 						"path": "$.item"
 					}
 				]
@@ -29,7 +29,7 @@
 					{
 						"fact": "item",
 						"operator": "notEqual",
-						"value": "bone",
+						"value": "shoe",
 						"path": "$.item"
 					}
 				]
